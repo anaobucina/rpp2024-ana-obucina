@@ -1,0 +1,54 @@
+<mat-sidenav-container>
+  <mat-sidenav class="first-color" #sidenav [fixedInViewport]="true" mode="side" opened>
+    <mat-accordion multi>
+      <mat-expansion-panel hideToggle="true" expanded="true">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+            <mat-icon>home</mat-icon>
+            Aplikacija
+          </mat-panel-title>
+          <mat-panel-description>
+           Aplikacija za fakultet
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <mat-nav-list>
+          <a mat-button [routerLink]="['/projekat']">Projekat</a>
+        </mat-nav-list>
+        <mat-nav-list>
+          <a mat-button [routerLink]="['/smer']">Smer</a>
+        </mat-nav-list>
+        <mat-nav-list>
+          <a mat-button [routerLink]="['/grupa']">Grupa</a>
+        </mat-nav-list>
+       </mat-expansion-panel>
+      <mat-expansion-panel hideToggle="true" expanded="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon>info</mat-icon>
+             Informacije
+          </mat-panel-title>
+          <mat-panel-description>
+           Osnovne informacije o aplikaciji
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-nav-list>
+          <a mat-button [routerLink]="['home']" >Glavna strana</a>
+        </mat-nav-list>
+        <mat-nav-list>
+          <a mat-button (click)="scroll()" >O aplikaciji</a>
+        </mat-nav-list>
+        <mat-nav-list>
+          <a mat-button (click)="scroll1() ">Autor</a>
+        </mat-nav-list>
+
+      </mat-expansion-panel>
+      
+    </mat-accordion>
+
+  </mat-sidenav>
+  <mat-sidenav-content style="overflow:hidden;">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+  
+</mat-sidenav-container>

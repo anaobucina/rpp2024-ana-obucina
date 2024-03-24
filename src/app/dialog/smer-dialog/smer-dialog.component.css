@@ -1,0 +1,18 @@
+.container {
+  
+    flex-direction: column;
+    width: 400px;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  }
+  .mat-form-field {
+    margin: auto;
+    font-size: 16px;
+    flex-grow: 1;
+  }
+  .mat-dialog-content
+  {
+    margin:auto;
+    padding:5px;
+  }

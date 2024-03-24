@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+  }
+  .mat-icon{
+    color: #88c4b6;
+  }
+  .mat-form-field {
+    font-size: 14px;
+    flex-grow:  1;
+    margin-top: 8px;
+  }
+  
+  .third-color { 
+    background: #ececec; 
+  }
+  .first-color { 
+    background: #9896f1; 
+  }
+
+  .no-results {
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+    font-size: 14px;
+    font-style: italic;
+  }
+  
+  .mat-column-id {
+    flex: 0 0 5%;
+  }
+  
+  .mat-column-oznaka {
+    flex: 0 0 20%;
+  }
+  
+  .mat-column-smer {
+    flex: 0 0 20%;
+  }  
+  .mat-column-actions {
+    flex: 0 0 20%;
+  }
+  
+  .title {
+    margin: 0 auto;
+  }

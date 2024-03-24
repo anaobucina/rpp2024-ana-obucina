@@ -1,0 +1,153 @@
+<!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1>StudentSphere</h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active" href="/home">Počenta</a></li>
+          <li><a (click)="scroll()" style="cursor:pointer;">O nama</a></li>
+          <li><a (click)="scroll1()" style="cursor:pointer;">Autor</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide " data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(assets/data/img/slide/slide-1.jpg)">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Dobrodošli u <span>StudentSphere</span></h2>
+                <p class="animate__animated animate__fadeInUp">Vaša digitalna platforma za sve informacije o studentima, grupama, 
+					smerovima i projektima. Sa intuitivnim dizajnom i bogatim setom funkcija, StudentSphere olakšava upravljanje 
+					studentskim podacima i projektnim aktivnostima. Povežite se sa svojim kolegama, istražujte nove mogućnosti i ostvarite 
+					svoje akademske ciljeve uz StudentSphere!"</p>
+                <a [routerLink]="['/projekat']" class="btn-get-started animate__animated animate__fadeInUp">Započnite</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="autor" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="assets/data/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h3>O autoru</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              magna aliqua.
+            </p>
+        
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. 
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" id="opis">
+		<h1><b>O aplikaciji</b></h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+				<div class="icon"></div>
+              <h4><a href="">Grupa</a></h4>
+              <p>Sadrži informacije o ID,oznaci i smeru kojem grupa pripada.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+				<div class="icon"></div>
+              <h4><a href="">Smer</a></h4>
+              <p>Sadrži informacije vezane za ID,naziv i oznaku smera.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+				<div class="icon"></div>
+              <h4><a href="">Projekat</a></h4>
+              <p>Sadrži informacije o ID, nazivu, opisu i oznaci projekta</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+				<div class="icon"></div>
+              <h4><a href="">Student</a></h4>
+              <p>Sadrži informacije o ID, imenu, prezimenu, broju indeksa, grupi i projektu studenta. </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+   
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Our Newsletter</h4>
+            <p>Budite prvi koji će dobiti informacije o novostima!</p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+   <!-- Vendor JS Files -->
+   <script src="assets/data/vendor/purecounter/purecounter_vanilla.js"></script>
+   <script src="assets/data/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/data/vendor/glightbox/js/glightbox.min.js"></script>
+   <script src="assets/data/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+   <script src="assets/data/vendor/swiper/swiper-bundle.min.js"></script>
+   <script src="assets/data/vendor/waypoints/noframework.waypoints.js"></script>
+   <script src="assets/data/vendor/php-email-form/validate.js"></script>
+ 
+   <!-- Template Main JS File -->
+   <script src="assets/data/js/main.js"></script>

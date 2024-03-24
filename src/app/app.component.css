@@ -1,0 +1,13 @@
+.mat-expansion-panel { 
+	background: #d59bf6; 
+	margin-bottom: 10px;
+	width:350px;
+}
+
+.third-color { 
+	background: #385170; 
+}
+
+.mat-accordion{
+padding:2px;
+}
