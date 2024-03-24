@@ -1,0 +1,95 @@
+-- INSERT commands for public.smer table
+INSERT INTO public.smer("id", "naziv", "oznaka") VALUES(nextval('smer_seq'), 'animacija u inzenjerstvu', 'AN');
+INSERT INTO public.smer("id", "naziv", "oznaka") VALUES(nextval('smer_seq'), 'arhitektura', 'AH');
+INSERT INTO public.smer("id", "naziv", "oznaka") VALUES(nextval('smer_seq'), 'biomedicinsko inzenjerstvo', 'BI');
+INSERT INTO public.smer("id", "naziv", "oznaka") VALUES(nextval('smer_seq'), 'ciste energetske tehnologije', 'ET');
+INSERT INTO public.smer("id", "naziv", "oznaka") VALUES(nextval('smer_seq'), 'energetika, elektronika i telekomunikacije', 'E1');
+INSERT INTO public.smer("id", "naziv", "oznaka") VALUES(nextval('smer_seq'), 'geodezija i geomatika', 'GE');
+INSERT INTO public.smer("id", "naziv", "oznaka") VALUES(nextval('smer_seq'), 'gradjevinarstvo', 'GR');
+INSERT INTO public.smer("id", "naziv", "oznaka") VALUES(nextval('smer_seq'), 'graficko inzenjerstvo i dizajn', 'GRID');
+INSERT INTO public.smer("id", "naziv", "oznaka") VALUES(nextval('smer_seq'), 'industrijsko inzenjerstvo', 'II');
+INSERT INTO public.smer("id", "naziv", "oznaka") VALUES(nextval('smer_seq'), 'informacioni inzenjering', 'IIT');
+INSERT INTO public.smer("id", "naziv", "oznaka") VALUES(nextval('smer_seq'), 'inzenjerski menadzment', 'IM');
+
+-- INSERT commands for public.grupa table
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 1 AN', '1');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 2 AN', '1');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 1 AH', '2');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 2 AH', '2');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 1 BI', '3');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 2 BI', '3');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 1 ET', '4');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 2 ET', '4');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 1 E1', '5');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 2 E1', '5');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 1 GE', '6');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 2 GE', '6');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 1 GR', '7');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 2 GR', '7');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 1 GRID', '8');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 2 GRID', '8');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 1 II', '9');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 2 II', '9');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 1 IIT', '10');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 2 IIT', '10');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 1 IM', '11');
+INSERT INTO public.grupa("id", "oznaka", "smer") VALUES(nextval('grupa_seq'), 'G 2 IM', '11');
+
+-- INSERT commands for public.projekat table
+INSERT INTO public.projekat("id", "naziv", "oznaka", "opis") VALUES(nextval('projekat_seq'), '3D modelovanje', 'G1 AN P1', 'Izrada projekta iz predmeta 3D modelovanje upotrebom metoda modeliranja trodimenzionalnih objekata');
+INSERT INTO public.projekat("id", "naziv", "oznaka", "opis") VALUES(nextval('projekat_seq'), 'Uvod u arhitektonski dizajn', 'G1 AH P1', 'Izrada projekta iz predmeta Uvod u arhitektonski dizajn upotrebom kreativnih procesa i savremenih arhitektonskih praksi');
+INSERT INTO public.projekat("id", "naziv", "oznaka", "opis") VALUES(nextval('projekat_seq'), 'Osnovi elektrotehnike', 'G2 BI P2', 'Izrada seminarskog rada iz predmeta Osnovi elektrotehnike');
+INSERT INTO public.projekat("id", "naziv", "oznaka", "opis") VALUES(nextval('projekat_seq'), 'Energija, drustvo i okruzenje', 'G2 ET P2', 'Izrada seminarskog rada iz predmeta Energija, drustvo i okruzenje');
+INSERT INTO public.projekat("id", "naziv", "oznaka", "opis") VALUES(nextval('projekat_seq'), 'Programski jezici i strukture podataka', 'G2 E1 P2', 'Izrada projekta iz predmeta Programski jezici i strukture podataka');
+INSERT INTO public.projekat("id", "naziv", "oznaka", "opis") VALUES(nextval('projekat_seq'), 'Uvod u geodeziju', 'G2 GE P2', 'Izrada projekta iz predmeta Uvod u geodeziju');
+INSERT INTO public.projekat("id", "naziv", "oznaka", "opis") VALUES(nextval('projekat_seq'), 'Inzenjerska geologija', 'G2 GR P2', 'Inzenjerska geologija');
+INSERT INTO public.projekat("id", "naziv", "oznaka", "opis") VALUES(nextval('projekat_seq'), 'Graficke aplikacije', 'G1 GRID P1', 'Izrada projekta iz predmeta Graficke aplikacije');
+INSERT INTO public.projekat("id", "naziv", "oznaka", "opis") VALUES(nextval('projekat_seq'), 'Razvoj i projektovanje proizvoda', 'G1 II P1', 'Izrada projekta iz predmeta Razvoj i projektovanje proizvoda');
+INSERT INTO public.projekat("id", "naziv", "oznaka", "opis") VALUES(nextval('projekat_seq'), 'Arhitektura racunara', 'G1 IIT P1', 'Izrada projekta iz predmeta Arhitektura racunara');
+INSERT INTO public.projekat("id", "naziv", "oznaka", "opis") VALUES(nextval('projekat_seq'), 'Preduzetnistvo', 'G1 IM P1', 'Izrada studije slucaja iz predmeta Preduzetnistvo');
+
+-- INSERT commands for public.student table
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Petar', 'Petrovic', '001/2018', 1, 1);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Marko', 'Markovic', '002/2018', 2, 2);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Nikola', 'Nikolic', '003/2018', 3, 3);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Milos', 'Milosevic', '004/2018', 4, 4);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Danilo', 'Danilovic', '005/2018', 5, 5);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Jovan', 'Jovanovic', '006/2018', 6, 6);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Marko', 'Petrovic', '007/2018', 7, 7);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Nenad', 'Stefanovic', '008/2018', 8, 8);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Darko', 'Stefanovic', '009/2018', 9, 9);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Marija', 'Rakic', '010/2018', 10, 10);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Miro', 'Govedarica', '011/2018', 11, 11);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Ivan', 'Lukovic', '012/2018', 12, 12);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Jovan', 'Markovic', '013/2018', 13, 13);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Sinisa', 'Mihajlovic', '014/2018', 14, 14);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Dragan', 'Stojkovic', '015/2018', 15, 15);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Vlade', 'Divac', '016/2018', 16, 16);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Eva', 'Tomic', '017/2018', 17, 17);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Ana', 'Lemic', '018/2018', 18, 18);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Ana', 'Miric', '019/2018', 19, 19);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Ena', 'Mirovic', '020/2018', 20, 20);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Mira', 'Miric', '021/2018', 21, 21);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Savo', 'Oroz', '022/2018', 22, 22);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Petar', 'Petric', '023/2018', 1, 1);
+
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Jova', 'Jovic', '025/2018', 3, 3);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Laza', 'Lazic', '026/2018', 4, 4);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Djoka', 'Djokic', '027/2018', 5, 5);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Ziva', 'Zivic', '028/2018', 6, 6);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Iva', 'Ivic', '029/2018', 7, 7);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Seka', 'Sekic', '030/2018', 8, 8);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Zika', 'Zikic', '031/2018', 9, 9);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Vida', 'Vidic', '032/2018', 10, 10);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Mica', 'Micic', '033/2018', 11, 11);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Pera', 'Peric', '034/2018', 12, 12);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Laza', 'Lazic', '035/2018', 13, 13);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Joca', 'Jocic', '036/2018', 14, 14);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Vera', 'Vasic', '037/2018', 15, 15);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Maja', 'Majic', '038/2018', 16, 16);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Tijana', 'Tijanic', '039/2018', 17, 17);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Zika', 'Zikic', '040/2018', 18, 18);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Mara', 'Maric', '041/2018', 19, 19);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Sava', 'Savic', '042/2018', 20, 20);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Jova', 'Jovicic', '043/2018', 21, 21);
+INSERT INTO public.student("id", "ime", "prezime", "broj_indeksa", "grupa", "projekat") VALUES(nextval('student_seq'), 'Maja', 'Majic', '044/2018', 22, 22);
